@@ -23,12 +23,13 @@ public class Solution2 {
               throw new RuntimeException("I see illegal symbol");
           }
         }
-        return true;
+        return stack.isEmpty();
     }
     public static void test() {
         System.out.println(isValid("()"));
         System.out.println(isValid("()[]{}"));
         System.out.println(isValid("(]"));
+        System.out.println(isValid("(()"));
 
     }
     public static void main(String[] args) {
